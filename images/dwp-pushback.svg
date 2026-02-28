@@ -1,0 +1,47 @@
+
+
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="120" viewBox="0 0 520 120">
+  <!-- Background (transparent) -->
+  <rect width="100%" height="100%" fill="none"/>
+
+  <!-- Text: DWP PUSHBACK -->
+  <text x="20" y="75"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="48"
+        font-weight="700"
+        fill="#1f3b6f">
+    DWP
+  </text>
+
+  <text x="260" y="75"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="48"
+        font-weight="700"
+        fill="#2d1082">
+    PUSHBACK
+  </text>
+
+  <!-- Simple figure pushing against the 'W' -->
+  <!-- Head -->
+  <circle cx="165" cy="45" r="7" fill="#333" />
+
+  <!-- Body (leaning forward) -->
+  <line x1="165" y1="52" x2="180" y2="75"
+        stroke="#333" stroke-width="4" stroke-linecap="round" />
+
+  <!-- Front arm pushing on the W -->
+  <line x1="175" y1="55" x2="190" y2="60"
+        stroke="#333" stroke-width="4" stroke-linecap="round" />
+
+  <!-- Back arm for balance -->
+  <line x1="160" y1="55" x2="148" y2="65"
+        stroke="#333" stroke-width="4" stroke-linecap="round" />
+
+  <!-- Front leg -->
+  <line x1="180" y1="75" x2="190" y2="95"
+        stroke="#333" stroke-width="4" stroke-linecap="round" />
+
+  <!-- Back leg -->
+  <line x1="180" y1="75" x2="168" y2="95"
+        stroke="#333" stroke-width="4" stroke-linecap="round" />
+</svg>

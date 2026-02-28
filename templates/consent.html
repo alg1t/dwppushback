@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Consent</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+
+  <body>
+    <header class="site-header"> <img src="../images/im1.png" alt="DWP Pushback logo" class="footer-logo" />
+      <h1>Consent</h1>
+      <p class="tagline">Your rights and how consent works</p>
+    </header>
+
+    <nav class="nav">
+      <a href="../index.html">Home</a>
+      <a href="templates.html">Templates</a>
+      <a href="guidance.html">Guidance</a>
+      <a href="consent.html">Consent</a>
+    </nav>
+
+    <div class="content">
+      <h2>Consent</h2>
+      <p>When the DWP asks for bank statements and you choose to hand them over, the act of submitting them is treated as you giving active consent through your own behaviour. In plain terms, the DWP can say: “You weren’t forced — you chose to provide these documents, so you’ve agreed to us using them for the claim.” By framing it this way, the responsibility shifts onto the claimant: the DWP can present themselves as not acting coercively, because the permission is seen as coming from the claimant’s voluntary action rather than from any pressure applied by the department. This doesn’t give them unlimited freedom with your data, but it does allow them to argue that the initial access was something you consented to simply by submitting the statements.</p>
+<section>
+  <h2>Copy Template Text</h2>
+
+  <div id="templateBox" style="
+    padding:12px;
+    background:#f4f4f4;
+    border:1px solid #ccc;
+    border-radius:4px;
+    white-space:pre-wrap;
+    font-family:Consolas, monospace;
+  ">
+1. Nature and implication of consent
+
+The voluntar submission of full, unredacted bank statements risks being misconstrued as consent to the processing of transaction‑level personal data. For clarity, I do not, and cannot, provide consent under Article 6(1)(a) UK GDPR in circumstances of statutory compulsion or power imbalance (Recital 43). Any evidence I provide is solely for the purpose of verifying entitlement and must not be interpreted as consent to any broader or discretionary processing. I have remained fully cooperative in supplying information that is necessary and proportionate for the review and have already provided targeted financial information relevant to entitlement.
+  </div>
+
+  <button id="copyBtn">Copy</button>
+
+  <script>
+    const copyBtn = document.getElementById("copyBtn");
+    const templateBox = document.getElementById("templateBox");
+
+    copyBtn.addEventListener("click", async () => {
+      const text = templateBox.innerText;
+
+      try {
+        await navigator.clipboard.writeText(text);
+        copyBtn.textContent = "Copied!";
+        setTimeout(() => (copyBtn.textContent = "Copy"), 1500);
+      } catch (err) {
+        const range = document.createRange();
+        range.selectNode(templateBox);
+        window.getSelection().removeAllRanges();
+        window.getSelection().addRange(range);
+        document.execCommand("copy");
+        window.getSelection().removeAllRanges();
+        copyBtn.textContent = "Copied!";
+        setTimeout(() => (copyBtn.textContent = "Copy"), 1500);
+      }
+    });
+  </script>
+</section>
+    <footer class="site-footer">&copy; 2026</footer>
+  </body>
+</html>
