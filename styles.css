@@ -72,19 +72,11 @@ li {
 .nav a:hover {
   text-decoration: underline;
 }
-.bmc-button {
-  display: inline-block;
-  background: #2d1082; /* match header background */
-  color: #fff;
-  padding: 10px 16px;
-  border-radius: 6px;
-  font-weight: bold;
-  text-decoration: none;
-  font-family: inherit;
+.bmc-button img {
+  width: 140px;      /* tweak this */
+  height: auto;
 }
-.bmc-button:hover {
-  background: #ffe866;
-}
+
 /* .site-footer {
   text-align: center;
   padding: 20px 0;
