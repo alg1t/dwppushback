@@ -156,8 +156,8 @@ li {
     padding-left: 1.2rem;
   }
 
-  .bmc-button img {
-    width: 120px; /* tweak this */
+  /* .bmc-button img {
+    width: 120px; 
     height: auto;
-  }
+  } */
 }
