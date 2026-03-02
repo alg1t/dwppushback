@@ -73,7 +73,7 @@ li {
   text-decoration: underline;
 }
 .bmc-button img {
-  width: 140px;      /* tweak this */
+  width: 140px; /* tweak this */
   height: auto;
 }
 
@@ -154,5 +154,10 @@ li {
 
   ul {
     padding-left: 1.2rem;
+  }
+
+  .bmc-button img {
+    width: 60px; /* tweak this */
+    height: auto;
   }
 }
