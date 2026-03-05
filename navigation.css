@@ -1,81 +1,6 @@
 /* ------------------------------
-   Base styles
+   NAVIGATION (Desktop)
 ------------------------------ */
-
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  background: #f5f5f5;/8whole body*/
-  color: #222; /*text*/
- 
-  line-height: 1.3;
-}
-
-/* ------------------------------
-   Header  all the DWI
-  .tagline   nformation for people challenging excessive requestsP bit
-   
------------------------------- */
-
-.site-header {
-  background: #1f3b6f;
-  color: #fff;
-  padding: 35px 20px;
-  text-align: center;
-}
-
-.site-header .tagline {
-  margin-top: 4px;
-  font-size: 1rem;
-  opacity: 0.9;
-}
-
-.site-header .footer-logo {
-  width: 150px;
-  height: 80px;
-  object-fit: contain;
-  display: block;
-  margin: 0 auto -10px;
-}
-
-/* ------------------------------
-   Content the main text element
------------------------------- */
-
-.content {
-  max-width: 900px;
-  margin: 30px auto 40px;
-  background: #ffffff;
-  padding: 30px 25px;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-}
-
-h2 {
-  margin-top: 25px;
-  color: #1f3b6f;
-}
-
-ul {
-  padding-left: 20px;
-}
-
-li {
-  margin-bottom: 6px;
-}
-
-/* ------------------------------
-   Footer
------------------------------- */
-
-.site-footer {
-  text-align: center;
-  padding: 15px 20px;
-  background: #e4e4e4;
-  font-size: 0.9rem;
-}
-
-
 /* ------------------------------
    NAVIGATION (Desktop)
 ------------------------------ */
@@ -83,13 +8,13 @@ li {
 .nav {
   background: #16325c;
   padding: 12px;
-  position: relative;/*top right of nav - not page*/
+  position: relative;
   text-align: center;
 }
 
 .nav-links {
   display: flex;
-  justify-content: center; 
+  justify-content: center;
   gap: 1.5rem;
 }
 
@@ -106,6 +31,7 @@ li {
 /* ------------------------------
    Hamburger button (hidden on desktop)
 ------------------------------ */
+
 .nav-toggle {
   display: none;
   background: none;
@@ -116,23 +42,19 @@ li {
   right: 12px;
   padding: 0.5rem;
 }
-/* ------------------------------
-   Hamburger button three‑line hamburger icon by stacking
------------------------------- */
+
 .hamburger,
 .hamburger::before,
 .hamburger::after {
   width: 26px;
   height: 3px;
-  background: #16325c;
+  background:#16325c;
   display: block;
   border-radius: 2px;
   transition: 0.3s ease;
   position: relative;
 }
-/* ------------------------------
-   Hamburger button three‑line hamburger icon by stacking
------------------------------- */
+
 .hamburger::before,
 .hamburger::after {
   content: "";
@@ -158,7 +80,7 @@ li {
     padding: 12px;
     background: none;
     /* padding: 0; */
-    /* height: 0; */
+    /* height: 0; */ */
   }
 
   /* Hide all nav links */
@@ -186,11 +108,11 @@ li {
     padding: 12px;
     border-radius: 6px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    width: 180px;/*width of dropdown*/
-    text-align: center;
+    width: 180px;
+    text-align: right;
   }
 
-  /* Hamburger → X animation ie turn to a cross */
+  /* Hamburger → X animation */
   .nav-toggle.active .hamburger {
     background: transparent;
   }
@@ -204,4 +126,4 @@ li {
     transform: rotate(-45deg);
     top: 0;
   }
-}
+}}

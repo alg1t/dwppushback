@@ -11,14 +11,26 @@
        <img src="../images/im1.png" alt="DWP Pushback logo" class="footer-logo" />
       <h1>Scope, Legal Basis And Necessity</h1>
       <p class="tagline">Understanding what the DWP must justify</p>
-    </header>
-
+    </header> 
+    
     <nav class="nav">
+      <button class="nav-toggle" aria-label="Menu">
+        <span class="hamburger"></span>
+      </button>
+
+      <div class="nav-links">
+        <a href="../index.html">Home</a>
+        <a href="../pages/templates.html">Terms And Templates</a>
+        <a href="../pages/about.html">About</a>
+      </div>
+    </nav>
+
+    <!-- <nav class="nav">
       <a href="../index.html">Home</a>
-      <!-- <a href="page2.html">Data Protection & GDPR</a> -->
+      
       <a href="../pages/templates.html">Templates</a>
       <a href="../pages/about.html">About</a>
-    </nav>
+    </nav> -->
 
     <main class="content">
       <section>
@@ -84,7 +96,7 @@ transparency, accountability.
 
   <button id="copyBtn">Copy</button>
 
-  <script>
+  <!-- <script>
     const copyBtn = document.getElementById("copyBtn");
     const templateBox = document.getElementById("templateBox");
 
@@ -106,7 +118,7 @@ transparency, accountability.
         setTimeout(() => (copyBtn.textContent = "Copy"), 1500);
       }
     });
-  </script>
+  </script> -->
 </section>
      
         </body>
@@ -116,5 +128,6 @@ transparency, accountability.
     <footer class="site-footer">
       <p>General information only — not legal advice.</p>
     </footer>
+    <script src="../dwp.js"></script>
   </body>
 </html>

@@ -14,12 +14,23 @@
     </header>
 
     <nav class="nav">
+      <button class="nav-toggle" aria-label="Menu">
+        <span class="hamburger"></span>
+      </button>
+
+      <div class="nav-links">
+        <a href="../index.html">Home</a>
+        <a href="../pages/templates.html">Terms And Templates</a>
+        <a href="../pages/about.html">About</a>
+      </div>
+    </nav>
+
+    <!-- <nav class="nav">
       <a href="../index.html">Home</a>
       <a href="../pages/templates.html">Terms & Templates</a>
       <a href="../pages/about.html">About</a>
-      <!-- <a href="guidance.html">Guidance</a>
-      <a href="consent.html">Consent</a> -->
-    </nav>
+   
+    </nav> -->
 
     <div class="content">
       <h2>Consent</h2>
@@ -42,7 +53,7 @@ The voluntar submission of full, unredacted bank statements risks being misconst
 
   <button id="copyBtn">Copy</button>
 
-  <script>
+  <!-- <script>
     const copyBtn = document.getElementById("copyBtn");
     const templateBox = document.getElementById("templateBox");
 
@@ -64,8 +75,9 @@ The voluntar submission of full, unredacted bank statements risks being misconst
         setTimeout(() => (copyBtn.textContent = "Copy"), 1500);
       }
     });
-  </script>
+  </script> -->
 </section>
     <footer class="site-footer">&copy; 2026</footer>
+    <script src="../dwp.js"></script>
   </body>
 </html>

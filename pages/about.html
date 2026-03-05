@@ -6,6 +6,7 @@
     <title>About This Site</title>
     <link rel="stylesheet" href="../styles.css" />
   </head>
+
   <body>
     <header class="site-header">
       <img
@@ -18,11 +19,23 @@
     </header>
 
     <nav class="nav">
+      <button class="nav-toggle" aria-label="Menu">
+        <span class="hamburger"></span>
+      </button>
+
+      <div class="nav-links">
+        <a href="../index.html">Home</a>
+        <a href="templates.html">Terms And Templates</a>
+        <a href="about.html">About</a>
+      </div>
+    </nav>
+
+    <!-- <nav class="nav">
       <a href="../index.html">Home</a>
-      <!-- <a href="../pages/page2.html">Data Protection & GDPR</a> -->
+  
       <a href="templates.html">Terms & Templates</a>
       <a href="about.html">About</a>
-    </nav>
+    </nav> -->
 
     <main class="content">
       <section>
@@ -41,11 +54,12 @@
       <section>
         <h2>Template paragraph you can reuse</h2>
         <p>
-         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id risus vel justo fermentum viverra.
-          Sed cursus, magna vitae porttitor tincidunt, elit arcu faucibus libero,
-           vitae tincidunt lorem augue non urna. Integer ac velit nec ipsum interdum
-            gravida. Suspendisse vel augue non ipsum bibendum tincidunt. Pellentesque
-             habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id
+          risus vel justo fermentum viverra. Sed cursus, magna vitae porttitor
+          tincidunt, elit arcu faucibus libero, vitae tincidunt lorem augue non
+          urna. Integer ac velit nec ipsum interdum gravida. Suspendisse vel
+          augue non ipsum bibendum tincidunt. Pellentesque habitant morbi
+          tristique senectus et netus et malesuada fames ac turpis egestas.
         </p>
       </section>
       <section>
@@ -53,18 +67,24 @@
         <p>
           My motivation for putting this site together to offer accessible
           information for people who may feel unsure or overwhelmed when dealing
-          with DWP requests. Many people experience the system as difficult or intimidating, so the aim here is
-          simply to provide supportive guidance that may help people feel more
-          confident and better equipped to respond. I am more than happy to
-          offer free guidance and templates, however if you find these templates
-          useful, you can support the work here:
+          with DWP requests. Many people experience the system as difficult or
+          intimidating, so the aim here is simply to provide supportive guidance
+          that may help people feel more confident and better equipped to
+          respond. I am more than happy to offer free guidance and templates,
+          however if you find these templates useful, you can support the work
+          here:
         </p>
-        
-        <a href="https://www.buymeacoffee.com/YOUR_USERNAME" target="_blank" class="bmc-button">
-  <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png"
-       alt="Buy Me A Coffee">
-</a>
 
+        <a
+          href="https://www.buymeacoffee.com/YOUR_USERNAME"
+          target="_blank"
+          class="bmc-button"
+        >
+          <img
+            src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png"
+            alt="Buy Me A Coffee"
+          />
+        </a>
 
         <!-- <a
           href="https://www.buymeacoffee.com/YOURNAME"
@@ -80,6 +100,7 @@
       <img src="images/im1.png" alt="DWP Pushback logo" class="footer-logo" />
       <p>© dwppushback — General information only — not legal advice.</p>
     </footer>
+    <script src="../dwp.js"></script>
     <!-- 
 <footer class="site-footer">
       <p>General information only — not legal advice.</p>

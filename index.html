@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DWP & Bank Statements – Your Rights</title>
     <link rel="stylesheet" href="styles.css" />
+    <!-- <link rel="stylesheet" href="navigation.css" /> -->
   </head>
+
   <body>
     <header class="site-header">
       <img src="images/im1.png" alt="DWP Pushback logo" class="footer-logo" />
@@ -15,12 +17,22 @@
       </p>
     </header>
 
-    <nav class="nav">
-      <!-- <a href="pages/page1.html">Legal Scope, Basis And Necessity</a>
-      <a href="pages/page2.html">Data Protection & GDPR</a> -->
+    <!-- <nav class="nav">
       <a href="index.html">Home</a>
       <a href="pages/templates.html">Terms And Templates</a>
       <a href="pages/about.html">About</a>
+    </nav>  -->
+
+    <nav class="nav">
+      <button class="nav-toggle" aria-label="Menu">
+        <span class="hamburger"></span>
+      </button>
+
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="pages/templates.html">Terms And Templates</a>
+        <a href="pages/about.html">About</a>
+      </div>
     </nav>
 
     <main class="content">
@@ -68,5 +80,15 @@
       </p>
       <p>&copy; 2026 DWP Pushback</p>
     </footer>
+    <script src="dwp.js"></script>
+    <!-- <script>
+      const toggle = document.querySelector(".nav-toggle");
+      const links = document.querySelector(".nav-links");
+
+      toggle.addEventListener("click", () => {
+        toggle.classList.toggle("active");
+        links.classList.toggle("open");
+      });
+    </script> -->
   </body>
 </html>
