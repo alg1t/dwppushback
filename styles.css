@@ -96,6 +96,13 @@ li {
   background: #e4e4e4;
   font-size: 0.9rem;
 }
+/* ------------------------------
+   Buy Me Coffee button
+------------------------------ */
+.bmc-button img {
+  width: 180px; /* change this to the size you want */
+  height: auto;
+}
 
 /* ------------------------------
    NAVIGATION (Desktop)
