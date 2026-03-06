@@ -62,7 +62,7 @@ body {
 
   width: 170px;
   height: auto;
-  animation: slide-left 5s ease forwards;
+  animation: slide-left 4s ease forwards;
   z-index: 2;
 }
 @keyframes slide-left {
@@ -214,22 +214,19 @@ li {
   .animated-logo {
     width: 7.5rem !important;
     height: auto !important;
-    animation: slide-left-mobile 10s ease-out forwards !important;
+    animation: slide-left-mobile 4s ease-out forwards !important;
   }
 
   @keyframes slide-left-mobile {
     0% {
-      left: 55%;                 /* 10% to the right of centre */
+      left: 55%; /* 10% to the right of centre */
       transform: translateX(-50%) translateY(-50%);
     }
     100% {
-      left: 50%;                 /* perfectly centred */
+      left: 50%; /* perfectly centred */
       transform: translateX(-50%) translateY(-50%);
     }
   }
-}
-
-
 
   /* Hide the entire navbar bar */
   .nav {
