@@ -1,0 +1,88 @@
+<!-- <!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin – Comments Dashboard</title>
+
+    <style>
+      body {
+        font-family: system-ui, sans-serif;
+        max-width: 600px;
+        margin: 3rem auto;
+        padding: 1rem;
+        line-height: 1.6;
+      }
+      a.button {
+        display: inline-block;
+        padding: 0.7rem 1.2rem;
+        background: #005bbb;
+        color: white;
+        text-decoration: none;
+        border-radius: 6px;
+        margin-top: 1rem;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Comments Admin</h1>
+
+    <p>
+      This page is private. Use the button below to open your Cusdis comments
+      dashboard.
+    </p>
+
+    <a class="button" href="https://cusdis.com/dashboard" target="_blank">
+      Open Cusdis Dashboard
+    </a>
+  </body>
+</html> -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin – Comments Dashboard</title>
+
+    <style>
+      body {
+        font-family: system-ui, sans-serif;
+        max-width: 600px;
+        margin: 3rem auto;
+        padding: 1rem;
+        line-height: 1.6;
+      }
+      a.button {
+        display: inline-block;
+        padding: 0.7rem 1.2rem;
+        background: #005bbb;
+        color: white;
+        text-decoration: none;
+        border-radius: 6px;
+        margin-top: 1rem;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- 🔐 ACCESS PROTECTION -->
+    <script>
+      if (sessionStorage.getItem("authenticated") !== "true") {
+        window.location.href = "cudis.html"; // adjust path if needed
+      }
+    </script>
+    <!-- END PROTECTION -->
+
+    <h1>Comments Admin</h1>
+
+    <p>
+      This page is private. Use the button below to open your Cusdis comments
+      dashboard.
+    </p>
+
+    <a class="button" href="https://cusdis.com/dashboard" target="_blank">
+      Open Cusdis Dashboard
+    </a>
+  </body>
+</html>

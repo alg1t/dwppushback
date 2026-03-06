@@ -1,0 +1,116 @@
+<!-- <!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Private Area</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        max-width: 400px;
+        margin: 4rem auto;
+      }
+      input {
+        width: 100%;
+        padding: 0.5rem;
+        margin-top: 1rem;
+      }
+      button {
+        padding: 0.5rem 1rem;
+        margin-top: 1rem;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Enter Password</h1>
+
+    <input id="pw" type="password" placeholder="Password" />
+    <button onclick="check()">Enter</button>
+    <script>
+      async function sha256(message) {
+        const msgBuffer = new TextEncoder().encode(message);
+        const hashBuffer = await crypto.subtle.digest("SHA-256", msgBuffer);
+        const hashArray = Array.from(new Uint8Array(hashBuffer));
+        const hashHex = hashArray
+          .map((b) => b.toString(16).padStart(2, "0"))
+          .join("");
+        return hashHex;
+      }
+
+      async function check() {
+        const pw = document.getElementById("pw").value;
+        const enteredHash = await sha256(pw);
+
+        const correctHash =
+          "e9b303997cf6302dea6f3f68ee9faa074251b0744bfc71d2b4ee190894d72879";
+
+        if (enteredHash === correctHash) {
+          window.location.href = "private-comments.html";
+        } else {
+          alert("Incorrect password");
+        }
+      }
+    </script>
+  </body>
+</html> -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Private Area</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        max-width: 400px;
+        margin: 4rem auto;
+      }
+      input {
+        width: 100%;
+        padding: 0.5rem;
+        margin-top: 1rem;
+      }
+      button {
+        padding: 0.5rem 1rem;
+        margin-top: 1rem;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Enter Password</h1>
+
+    <input id="pw" type="password" placeholder="Password" />
+    <button onclick="check()">Enter</button>
+
+    <script>
+      async function sha256(message) {
+        const msgBuffer = new TextEncoder().encode(message);
+        const hashBuffer = await crypto.subtle.digest("SHA-256", msgBuffer);
+        const hashArray = Array.from(new Uint8Array(hashBuffer));
+        const hashHex = hashArray
+          .map((b) => b.toString(16).padStart(2, "0"))
+          .join("");
+        return hashHex;
+      }
+
+      async function check() {
+        const pw = document.getElementById("pw").value;
+        const enteredHash = await sha256(pw);
+
+        const correctHash =
+          "e9b303997cf6302dea6f3f68ee9faa074251b0744bfc71d2b4ee190894d72879";
+
+        if (enteredHash === correctHash) {
+          // 🔐 THIS IS THE IMPORTANT PART
+          sessionStorage.setItem("authenticated", "true");
+
+          window.location.href = "private-comments.html";
+        } else {
+          alert("Incorrect password");
+        }
+      }
+    </script>
+  </body>
+</html>

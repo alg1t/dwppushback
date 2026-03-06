@@ -117,6 +117,18 @@ li {
   height: auto !important;
 }
 
+#secret-admin {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  opacity: 9; /* fully invisible */
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
 /* ------------------------------
    NAVIGATION (Desktop)
 ------------------------------ */
