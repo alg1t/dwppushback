@@ -202,11 +202,11 @@ li {
 
   @keyframes slide-left-mobile {
     0% {
-      left: 10.5rem;
+      left: 10rem;
       transform: translate(0, -50%);
     }
     100% {
-      left: 9.5rem;
+      left: 9rem;
       transform: translate(0, -50%);
     }
   }
