@@ -193,18 +193,20 @@ li {
 ------------------------------ */
 
 @media (max-width: 768px) {
-  .animation-logo {
+  .animated-logo {
     /* or your selector */
-    animation: slide-left-mobile 1s ease-out forwards !important;
+    width: 8rem !important;
+    height: auto !important;
+    animation: slide-left-mobile 10s ease-out forwards !important;
   }
 
-  @keyframes slide-left {
+  @keyframes slide-left-mobile {
     0% {
-      left: 4.5rem;
+      left: 10.5rem;
       transform: translate(0, -50%);
     }
     100% {
-      left: 4rem;
+      left: 9.5rem;
       transform: translate(0, -50%);
     }
   }
@@ -260,5 +262,13 @@ li {
   .nav-toggle.active .hamburger::after {
     transform: rotate(-45deg);
     top: 0;
+  }
+  .site-header .tagline {
+    margin-top: 4px;
+    font-size: 0.9rem;
+    opacity: 0.9;
+  }
+  .header-text {
+    font-size: 0.8rem;
   }
 }
