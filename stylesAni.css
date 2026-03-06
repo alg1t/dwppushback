@@ -17,27 +17,11 @@ body {
    
 ------------------------------ */
 
-/* .site-header {
-  background: #1f3b6f;
-  color: #fff;
-  padding: 35px 20px;
-  text-align: center;
-} */
-.site-header {
-  /* background: url("images/img1.png") center/cover no-repeat; */
-  background: url("images/img1.png") top/cover no-repeat;
-  color: #fff;
-  padding: 35px 20px;
-  text-align: center;
-  position: relative;
-}
-
-/* Optional: subtle dark overlay for readability */
 .site-header::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(31, 59, 111, 0.8);
+  background: rgba(31, 59, 111, 0.95);
   z-index: 0;
 }
 
@@ -45,24 +29,52 @@ body {
   position: relative;
   z-index: 1;
 }
-
+.site-header {
+  position: relative;
+  display: flex;
+  flex-direction: column; /* stack logo area + text */
+  align-items: center; /* centre horizontally */
+  justify-content: flex-start; /* text stays near top */
+  min-height: 200px; /* room for logo above text */
+  background: url("images/img1.png") top/cover no-repeat;
+  color: #fff;
+  padding: 35px 20px;
+}
+.header-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  margin-top: 80px;
+}
 .site-header .tagline {
   margin-top: 4px;
   font-size: 1rem;
   opacity: 0.9;
 }
 
-.site-header .footer-logo {
+.animated-logo {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+
+  transform: translateX(-50%);
+
   width: 170px;
   height: auto;
-  object-fit: contain;
-  display: block;
-  margin: 0 auto -10px;
+  animation: slide-left 5s ease forwards;
+  z-index: 2;
 }
-
-/* ------------------------------
-   Content the main text element
------------------------------- */
+@keyframes slide-left {
+  0% {
+    left: 53%;
+    transform: translate(-50%, -50%);
+  }
+  100% {
+    left: 56rem;
+    transform: translate(0, -50%);
+  }
+}
 
 .content {
   max-width: 900px;
@@ -181,6 +193,21 @@ li {
 ------------------------------ */
 
 @media (max-width: 768px) {
+  .animation-logo {
+    /* or your selector */
+    animation: slide-left-mobile 1s ease-out forwards !important;
+  }
+
+  @keyframes slide-left {
+    0% {
+      left: 4.5rem;
+      transform: translate(0, -50%);
+    }
+    100% {
+      left: 4rem;
+      transform: translate(0, -50%);
+    }
+  }
   /* Hide the entire navbar bar */
   .nav {
     /* background: #16325c; */
