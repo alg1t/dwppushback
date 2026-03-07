@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Code Of Practise</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+
+  <body>
+    <header class="site-header"> <img src="../images/im1.png" alt="DWP Pushback logo" class="footer-logo" />
+      <h1>Code Of Practise</h1>
+      <p class="tagline">Lack Of An Established Code Of Practice</p>
+    </header>
+
+    <nav class="nav">
+      <button class="nav-toggle" aria-label="Menu">
+        <span class="hamburger"></span>
+      </button>
+
+      <div class="nav-links">
+        <a href="../index.html">Home</a>
+        <a href="../pages/templates.html">Terms And Templates</a>
+        <a href="../pages/about.html">About</a>
+      </div>
+    </nav>
+
+    <!-- <nav class="nav">
+      <a href="../index.html">Home</a>
+      <a href="../pages/templates.html">Terms & Templates</a>
+      <a href="../pages/about.html">About</a>
+   
+    </nav> -->
+
+    <div class="content">
+      <h2>Code Of Practise</h2>
+      <pa> Code of Practice in UK legislation is statutory guidance that sets out detailed rules and standards for how public authorities must exercise powers granted by an Act, helping ensure fair, transparent, and proportionate application without being directly enforceable as law itself. Without a final Code of Practice established, the powers in the Public Authorities (Fraud, Error and Recovery) Act 2025 cannot be fully operationalised by the DWP, meaning they are limited to preparatory steps like consultations rather than active use on claimants. Notably, for the first three months after the Act's introduction in late 2025, the DWP kept its three draft Codes (on eligibility verification, information gathering, and debt recovery) in open public consultation to gather feedback before potential finalisation></p>
+<section>
+  <h2>Copy Template Text</h2>
+
+  <div id="templateBox" style="
+    padding:12px;
+    background:#f4f4f4;
+    border:1px solid #ccc;
+    border-radius:4px;
+    white-space:pre-wrap;
+    font-family:Consolas, monospace;
+  ">
+1. Code Of Practise
+At time of writing, the continued absence of a statutory Code of Practice under the Public 
+Authorities (Fraud, Error and Recovery) Act 2025 represents a material deficiency in the safeguards
+Parliament intended to accompany the Act’s intrusive data-matching powers. Parliament expressly 
+required a Code to define the limits, safeguards, and proportionality standards governing the use of 
+these powers, yet no such Code has been issued and the consultation remains ongoing. As a result, 
+the statutory framework remains incomplete, the boundaries of lawful data use are unsettled, and 
+neither public authorities nor individuals have a clear, authoritative set of rules to rely upon. This 
+lack of legal certainty heightens the risk of over-reach, inconsistent practice, and defective 
+proportionality assessments under UK GDPR, the Data Protection Act 2018, and Article 8 ECHR. 
+For clarity, I do not suggest that the absence of a Code prevents the DWP from exercising its 
+existing powers; rather, it underscores the need for heightened caution, strict justification, and 
+adherence to data-minimisation principles when requesting intrusive financial information
+
+  </div>
+
+  <button id="copyBtn">Copy</button>
+
+  <!-- <script>
+    const copyBtn = document.getElementById("copyBtn");
+    const templateBox = document.getElementById("templateBox");
+
+    copyBtn.addEventListener("click", async () => {
+      const text = templateBox.innerText;
+
+      try {
+        await navigator.clipboard.writeText(text);
+        copyBtn.textContent = "Copied!";
+        setTimeout(() => (copyBtn.textContent = "Copy"), 1500);
+      } catch (err) {
+        const range = document.createRange();
+        range.selectNode(templateBox);
+        window.getSelection().removeAllRanges();
+        window.getSelection().addRange(range);
+        document.execCommand("copy");
+        window.getSelection().removeAllRanges();
+        copyBtn.textContent = "Copied!";
+        setTimeout(() => (copyBtn.textContent = "Copy"), 1500);
+      }
+    });
+  </script> -->
+</section>
+        <footer class="site-footer">
+      <p>
+        <strong>Disclaimer:</strong> This site provides general information only
+        and does not constitute legal advice.
+      </p>
+      <p>&copy; 2026 DWP Pushback</p>
+    </footer>
+    <script src="../dwp.js"></script>
+  </body>
+</html>
