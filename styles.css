@@ -104,6 +104,22 @@ li {
   width: 180px !important;
   height: auto !important;
 }
+/* ------------------------------
+   Copy  button
+------------------------------ */
+#copyBtn {
+  background: #16325c;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 10px 0;
+}
+
+#copyBtn:hover {
+  background: #1d3f75;
+}
 
 /* ------------------------------
    NAVIGATION (Desktop)
