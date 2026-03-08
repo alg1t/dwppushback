@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Consent</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+
+  <body>
+    <header class="site-header"> <img src="../images/im1.png" alt="DWP Pushback logo" class="footer-logo" />
+      <h1>Compliance</h1>
+      <p class="tagline">Demostration Of Cooperation And Compliance</p>
+    </header>
+
+    <nav class="nav">
+      <button class="nav-toggle" aria-label="Menu">
+        <span class="hamburger"></span>
+      </button>
+
+      <div class="nav-links">
+        <a href="../index.html">Home</a>
+        <a href="../pages/templates.html">Terms And Templates</a>
+        <a href="../pages/about.html">About</a>
+      </div>
+    </nav>
+
+    <!-- <nav class="nav">
+      <a href="../index.html">Home</a>
+      <a href="../pages/templates.html">Terms & Templates</a>
+      <a href="../pages/about.html">About</a>
+   
+    </nav> -->
+
+    <div class="content">
+      <h2>Cooperation And Compliance</h2>
+      <p >Failing to comply with a DWP request can lead to a range of consequences, including delays in processing the claim, suspension of payments, or a decision being made without the information the claimant could have provided. In some cases, continued non‑compliance may result in the claim being reduced or terminated if the Department concludes that the claimant has not met their obligations to engage with the process.<br><br>If you have already engaged courteously and provided full details of all accounts and balances, then you have clearly demonstrated cooperation and compliance, acting reasonably and engaging with the process. This makes it evident that the remaining issue is not refusal, but whether any further requests are genuinely necessary and proportionate. Establishing this protects the claimant from allegations of non‑engagement, strengthens the case against excessive or irrelevant information demands, and places the responsibility back on the decision‑maker to justify why additional disclosure is required.</p>
+<section>
+  <h2>Copy Template Text</h2>
+
+  <div id="templateBox" style="
+    padding:12px;
+    background:#f4f4f4;
+    border:1px solid #ccc;
+    border-radius:4px;
+    white-space:pre-wrap;
+    font-family:Consolas, monospace;
+  ">
+In order to facilitate the proper administration of my claim, I wish to formally state that I have complied fully with the Department’s requests to the extent that is reasonable and proportionate. I have engaged with the Department in a courteous and timely manner and have already provided comprehensive details of all accounts, balances, and associated financial information as requested. This constitutes clear evidence of my cooperation and good‑faith engagement with the process. Accordingly, the matter at hand is not one of non‑compliance, but rather whether any further requests now being made fall within the bounds of necessity, proportionality, and the Department’s statutory remit. In light of the cooperation already demonstrated, I respectfully require the Department to acknowledge that I have demonstrated reasonable engagement.
+  </div>
+
+  <button id="copyBtn">Copy</button>
+
+  <!-- <script>
+    const copyBtn = document.getElementById("copyBtn");
+    const templateBox = document.getElementById("templateBox");
+
+    copyBtn.addEventListener("click", async () => {
+      const text = templateBox.innerText;
+
+      try {
+        await navigator.clipboard.writeText(text);
+        copyBtn.textContent = "Copied!";
+        setTimeout(() => (copyBtn.textContent = "Copy"), 1500);
+      } catch (err) {
+        const range = document.createRange();
+        range.selectNode(templateBox);
+        window.getSelection().removeAllRanges();
+        window.getSelection().addRange(range);
+        document.execCommand("copy");
+        window.getSelection().removeAllRanges();
+        copyBtn.textContent = "Copied!";
+        setTimeout(() => (copyBtn.textContent = "Copy"), 1500);
+      }
+    });
+  </script> -->
+</section>
+        <footer class="site-footer">
+      <p>
+        <strong>Disclaimer:</strong> This site provides general information only
+        and does not constitute legal advice.
+      </p>
+      <p>&copy; 2026 DWP Pushback</p>
+    </footer>
+    <script src="../dwp.js"></script>
+  </body>
+</html>

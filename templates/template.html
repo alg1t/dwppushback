@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Consent</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+
+  <body>
+    <header class="site-header"> <img src="../images/im1.png" alt="DWP Pushback logo" class="footer-logo" />
+      <h1>Consent</h1>
+      <p class="tagline">xxxx</p>
+    </header>
+
+    <nav class="nav">
+      <button class="nav-toggle" aria-label="Menu">
+        <span class="hamburger"></span>
+      </button>
+
+      <div class="nav-links">
+        <a href="../index.html">Home</a>
+        <a href="../pages/templates.html">Terms And Templates</a>
+        <a href="../pages/about.html">About</a>
+      </div>
+    </nav>
+
+    <!-- <nav class="nav">
+      <a href="../index.html">Home</a>
+      <a href="../pages/templates.html">Terms & Templates</a>
+      <a href="../pages/about.html">About</a>
+   
+    </nav> -->
+
+    <div class="content">
+      <h2>xxx</h2>
+      <p>xxx</p>
+<section>
+  <h2>Copy Template Text</h2>
+
+  <div id="templateBox" style="
+    padding:12px;
+    background:#f4f4f4;
+    border:1px solid #ccc;
+    border-radius:4px;
+    white-space:pre-wrap;
+    font-family:Consolas, monospace;
+  ">
+xxxxxxxx
+  </div>
+
+  <button id="copyBtn">Copy</button>
+
+  <!-- <script>
+    const copyBtn = document.getElementById("copyBtn");
+    const templateBox = document.getElementById("templateBox");
+
+    copyBtn.addEventListener("click", async () => {
+      const text = templateBox.innerText;
+
+      try {
+        await navigator.clipboard.writeText(text);
+        copyBtn.textContent = "Copied!";
+        setTimeout(() => (copyBtn.textContent = "Copy"), 1500);
+      } catch (err) {
+        const range = document.createRange();
+        range.selectNode(templateBox);
+        window.getSelection().removeAllRanges();
+        window.getSelection().addRange(range);
+        document.execCommand("copy");
+        window.getSelection().removeAllRanges();
+        copyBtn.textContent = "Copied!";
+        setTimeout(() => (copyBtn.textContent = "Copy"), 1500);
+      }
+    });
+  </script> -->
+</section>
+        <footer class="site-footer">
+      <p>
+        <strong>Disclaimer:</strong> This site provides general information only
+        and does not constitute legal advice.
+      </p>
+      <p>&copy; 2026 DWP Pushback</p>
+    </footer>
+    <script src="../dwp.js"></script>
+  </body>
+</html>
