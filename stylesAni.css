@@ -166,7 +166,7 @@ li {
   width: 20rem; /* banner width */
   /* max-width: 600px; optional: prevents it becoming too large on big screens */
   height: auto;
-  margin: 2rem auto; /* centres the image */
+  margin: 0.5rem auto; /* centres the image */
 }
 /* ------------------------------
    Hamburger button (hidden on desktop)
