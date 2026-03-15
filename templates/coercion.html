@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Consent</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+
+  <body>
+    <header class="site-header"> <img src="../images/im1.png" alt="DWP Pushback logo" class="footer-logo" />
+      <h1>Consequences Of Refusal</h1>
+      <p class="tagline">Coercement and bank statement submissions</p>
+    </header>
+
+    <nav class="nav">
+      <button class="nav-toggle" aria-label="Menu">
+        <span class="hamburger"></span>
+      </button>
+
+      <div class="nav-links">
+        <a href="../index.html">Home</a>
+        <a href="../pages/templates.html">Terms And Templates</a>
+        <a href="../pages/about.html">About</a>
+      </div>
+    </nav>
+
+    <!-- <nav class="nav">
+      <a href="../index.html">Home</a>
+      <a href="../pages/templates.html">Terms & Templates</a>
+      <a href="../pages/about.html">About</a>
+   
+    </nav> -->
+
+    <div class="content">
+      <h2>Coercement And Data Protection Law</h2>
+      <p> Asking what might happen if someone doesn’t give their bank statements is linked to data protection law because people have a right to know how their personal information 
+      is used and what could happen if they choose not to share it. Data protection law ensures that coercement can not be regarded as a legitimate means to secure transactional data — meaning people should not feel forced or pressured to hand over personal
+       data without clear justification.       
+      The law requires that any request for information must be necessary, fair, and transparent, so that individuals can make an informed choice about what they disclose.
+      DWP requests for bank statements typically rely on legal powers (e.g., under Social Security regulations), not consent, but they must still be necessary and proportionate under GDPR principles of fairness and minimisation — coercion would breach this </p>
+<section>
+  <h2>Copy Template Text</h2>
+
+  <div id="templateBox" style="
+    padding:12px;
+    background:#f4f4f4;
+    border:1px solid #ccc;
+    border-radius:4px;
+    white-space:pre-wrap;
+    font-family:Consolas, monospace;
+  ">
+I am writing to request information on the possible consequences of not submitting personal bank statements when requested as part of a benefits claim, review, or compliance check. My concern relates to protecting financial privacy and ensuring that any information shared is strictly necessary and proportionate.
+
+I would be grateful if you could clarify:
+
+   1) What specific consequences or actions may follow if a claimant declines to provide bank statements for privacy reasons.
+
+   2) Whether such a refusal would automatically result in the suspension, reduction, or termination of benefit payments.
+
+   3)  What alternative forms of financial verification the Department may accept instead of full bank statement disclosure.
+
+   4) How the Department ensures compliance with the UK GDPR and the Data Protection Act 2018, particularly regarding data minimisation, necessity, and proportionality.
+
+Please treat this letter as a formal request for information under your obligation to provide clear and transparent guidance to claimants. I would appreciate a written response within the standard timeframe.
+  </div>
+
+  <button id="copyBtn">Copy</button>
+
+  <!-- <script>
+    const copyBtn = document.getElementById("copyBtn");
+    const templateBox = document.getElementById("templateBox");
+
+    copyBtn.addEventListener("click", async () => {
+      const text = templateBox.innerText;
+
+      try {
+        await navigator.clipboard.writeText(text);
+        copyBtn.textContent = "Copied!";
+        setTimeout(() => (copyBtn.textContent = "Copy"), 1500);
+      } catch (err) {
+        const range = document.createRange();
+        range.selectNode(templateBox);
+        window.getSelection().removeAllRanges();
+        window.getSelection().addRange(range);
+        document.execCommand("copy");
+        window.getSelection().removeAllRanges();
+        copyBtn.textContent = "Copied!";
+        setTimeout(() => (copyBtn.textContent = "Copy"), 1500);
+      }
+    });
+  </script> -->
+</section>
+        <footer class="site-footer">
+      <p>
+        <strong>Disclaimer:</strong> This site provides general information only
+        and does not constitute legal advice.
+      </p>
+      <p>&copy; 2026 DWP Pushback</p>
+    </footer>
+    <script src="../dwp.js"></script>
+  </body>
+</html>
